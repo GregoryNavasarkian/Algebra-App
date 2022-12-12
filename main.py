@@ -2,7 +2,7 @@
 # Author: Gregory Navasarkian
 
 from matplotlib import pyplot as plt
-from matplotlib.ticker import FixedLocator
+import math
 
 
 class Graph:
@@ -18,7 +18,6 @@ class Graph:
         plt.xlabel("x-axis")
         plt.ylabel("y-axis")
 
-        major_locator = FixedLocator(0)
         plt.grid()
         plt.plot(self.x, self.y)
         plt.show()
@@ -57,24 +56,16 @@ class Function:
         """
         Exponential function
         """
-        x = range(-8, 8)
+        x = range(-4, 8)
         y = [a * b ** i for i in x]
         return Graph(x, y)
 
-    def logarithmic(self, a, b):
+    def logarithmic(self, b):
         """
         Logarithmic function
         """
-        x = range(1, 10)
-        y = [a * b ** i for i in x]
-        return Graph(x, y)
-
-    def trigonometric(self, a, b, c, d):
-        """
-        Trigonometric function
-        """
-        x = range(-10, 10)
-        y = [a * b ** i + c * b ** i + d for i in x]
+        x = range(1, 15)
+        y = [math.log(i, b) for i in x]
         return Graph(x, y)
 
 
@@ -89,8 +80,7 @@ def main():
         print("3. Cubic")
         print("4. Exponential")
         print("5. Logarithmic")
-        print("6. Trigonometric")
-        print("7. Exit")
+        print("6. Exit")
 
         choice = input("\nEnter your choice: ")
 
@@ -122,20 +112,16 @@ def main():
             graph.plot()
 
         elif choice == "5":
-            a = float(input("Enter the coefficient of b^x: "))
-            b = float(input("Enter the base: "))
-            graph = Function().logarithmic(a, b)
+            b = float(input("Enter the base (enter 0 for natural log(ln)): "))
+            if (b < 0) or (b == 1):
+                print("Invalid base.")
+            if b == 0:
+                graph = Function().logarithmic(math.e)
+            else:
+                graph = Function().logarithmic(b)
             graph.plot()
 
         elif choice == "6":
-            a = float(input("Enter the coefficient of sin(x): "))
-            b = float(input("Enter the coefficient of cos(x): "))
-            c = float(input("Enter the coefficient of tan(x): "))
-            d = float(input("Enter the constant: "))
-            graph = Function().trigonometric(a, b, c, d)
-            graph.plot()
-
-        elif choice == "7":
             break
 
         else:

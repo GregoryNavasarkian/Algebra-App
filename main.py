@@ -33,7 +33,7 @@ def linear_window():
 
     m_entry = ctk.CTkEntry(app, font=("Arial", 16))
     m_entry.pack(pady=8)
-
+    
     b_label = ctk.CTkLabel(app, text="B: ", font=("Arial", 16))
     b_label.pack(pady=8)
 

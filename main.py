@@ -2,6 +2,7 @@
 # Author: Gregory Navasarkian
 
 import customtkinter as ctk
+import math
 from functions import Functions
 
 
@@ -11,7 +12,7 @@ def linear_window():
         b = float(b_entry.get())
         graph = Functions().linear(m, b)
         graph.plot()
-
+    
     ctk.set_appearance_mode("System")
     ctk.set_default_color_theme("blue")
 
@@ -107,7 +108,7 @@ def cubic_window():
     ctk.set_default_color_theme("blue")
 
     app = ctk.CTk()
-    app.geometry("500x500")
+    app.geometry("500x550")
     app.title("Cubic Functions")
     app.resizable(False, False)
 
@@ -231,7 +232,7 @@ def main():
 
     ctk.set_appearance_mode("System")
     ctk.set_default_color_theme("blue")
-
+    
     app = ctk.CTk()
     app.geometry("500x350")
     app.title("Algebra App")
@@ -243,11 +244,11 @@ def main():
     description = ctk.CTkLabel(
         app, text="Select a function type to graph below", font=("Arial", 18))
     description.pack(pady=8)
-
+    
     linear_button = ctk.CTkButton(app, text="Linear", command=linear_window, font=(
         "Arial", 18), width=400, height=30)
     linear_button.pack(pady=8)
-
+    
     quadratic_button = ctk.CTkButton(
         app, text="Quadratic", command=quadratic_window, font=("Arial", 18), width=400, height=30)
     quadratic_button.pack(pady=8)

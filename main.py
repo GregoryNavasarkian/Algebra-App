@@ -91,20 +91,20 @@ def linear_window():
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Enter the slope and y-intercept below", font=("Arial", 16))
-    description.pack(pady=5)
+        app, text="Enter the slope and y-intercept below ( y = mx + b )", font=("Arial", 16))
+    description.pack(pady=8)
 
-    m_label = ctk.CTkLabel(app, text="Slope: ", font=("Arial", 14))
-    m_label.pack(pady=5)
+    m_label = ctk.CTkLabel(app, text="m: ", font=("Arial", 14))
+    m_label.pack(pady=8)
 
     m_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    m_entry.pack(pady=5)
+    m_entry.pack(pady=8)
 
-    b_label = ctk.CTkLabel(app, text="Y-intercept: ", font=("Arial", 14))
-    b_label.pack(pady=5)
+    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
+    b_label.pack(pady=8)
 
     b_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    b_entry.pack(pady=5)
+    b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
         app, text="Graph", command=graph, font=("Arial", 18), width=400, height=30)
@@ -133,26 +133,26 @@ def quadratic_window():
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Enter the coefficients below", font=("Arial", 16))
-    description.pack(pady=5)
+        app, text="Enter the coefficients below ( y = ax^2 + bx + c )", font=("Arial", 16))
+    description.pack(pady=8)
 
     a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
-    a_label.pack(pady=5)
+    a_label.pack(pady=8)
 
     a_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    a_entry.pack(pady=5)
+    a_entry.pack(pady=8)
 
     b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
-    b_label.pack(pady=5)
+    b_label.pack(pady=8)
 
     b_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    b_entry.pack(pady=5)
+    b_entry.pack(pady=8)
 
     c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 14))
-    c_label.pack(pady=5)
+    c_label.pack(pady=8)
 
     c_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    c_entry.pack(pady=5)
+    c_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
         app, text="Graph", command=graph, font=("Arial", 18), width=400, height=30)
@@ -182,32 +182,32 @@ def cubic_window():
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Enter the coefficients below", font=("Arial", 16))
-    description.pack(pady=5)
+        app, text="Enter the coefficients below ( y = ax^3 + bx^2 + cx + d )", font=("Arial", 16))
+    description.pack(pady=8)
 
     a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
-    a_label.pack(pady=5)
+    a_label.pack(pady=8)
 
     a_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    a_entry.pack(pady=5)
+    a_entry.pack(pady=8)
 
     b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
-    b_label.pack(pady=5)
+    b_label.pack(pady=8)
 
     b_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    b_entry.pack(pady=5)
+    b_entry.pack(pady=8)
 
     c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 14))
-    c_label.pack(pady=5)
+    c_label.pack(pady=8)
 
     c_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    c_entry.pack(pady=5)
+    c_entry.pack(pady=8)
 
     d_label = ctk.CTkLabel(app, text="d: ", font=("Arial", 14))
-    d_label.pack(pady=5)
+    d_label.pack(pady=8)
 
     d_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    d_entry.pack(pady=5)
+    d_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
         app, text="Graph", command=graph, font=("Arial", 18), width=400, height=30)
@@ -235,20 +235,20 @@ def exponential_window():
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Enter the coefficients below", font=("Arial", 16))
-    description.pack(pady=5)
+        app, text="Enter the base and coefficient below ( y = a * b^x )", font=("Arial", 16))
+    description.pack(pady=8)
 
     a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
-    a_label.pack(pady=5)
+    a_label.pack(pady=8)
 
     a_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    a_entry.pack(pady=5)
+    a_entry.pack(pady=8)
 
     b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
-    b_label.pack(pady=5)
+    b_label.pack(pady=8)
 
     b_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    b_entry.pack(pady=5)
+    b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
         app, text="Graph", command=graph, font=("Arial", 18), width=400, height=30)
@@ -272,24 +272,18 @@ def logarithmic_window():
     app.title("Logarithmic Function")
     app.resizable(False, False)
 
-    title = ctk.CTkLabel(app, text="Logarithmic Function", font=("Arial", 24))
+    title = ctk.CTkLabel(app, text="Logarithmic Function", font=("Arial", 28))
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Enter the coefficients below", font=("Arial", 16))
-    description.pack(pady=5)
-
-    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
-    a_label.pack(pady=5)
-
-    a_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    a_entry.pack(pady=5)
-
-    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
-    b_label.pack(pady=5)
+        app, text="Enter the base below (enter 0 for natural log)", font=("Arial", 16))
+    description.pack(pady=8)    
+    
+    b_label = ctk.CTkLabel(app, text="base: ", font=("Arial", 14))
+    b_label.pack(pady=8)
 
     b_entry = ctk.CTkEntry(app, font=("Arial", 14))
-    b_entry.pack(pady=5)
+    b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
         app, text="Graph", command=graph, font=("Arial", 18), width=400, height=30)
@@ -304,94 +298,38 @@ def main():
     ctk.set_default_color_theme("blue")
 
     app = ctk.CTk()
-    app.geometry("500x500")
+    app.geometry("500x350")
     app.title("Algebra App")
     app.resizable(False, False)
 
-    title = ctk.CTkLabel(app, text="Algebra App", font=("Arial", 24))
+    title = ctk.CTkLabel(app, text="Algebra App", font=("Arial", 28))
     title.pack(pady=10)
 
     description = ctk.CTkLabel(
-        app, text="Select a function type to graph below", font=("Arial", 16))
-    description.pack(pady=5)
-    
+        app, text="Select a function type to graph below", font=("Arial", 18))
+    description.pack(pady=8)
+
     linear_button = ctk.CTkButton(app, text="Linear", command=linear_window, font=(
         "Arial", 18), width=400, height=30)
-    linear_button.pack(pady=5)
+    linear_button.pack(pady=8)
 
     quadratic_button = ctk.CTkButton(
         app, text="Quadratic", command=quadratic_window, font=("Arial", 18), width=400, height=30)
-    quadratic_button.pack(pady=5)
+    quadratic_button.pack(pady=8)
 
     cubic_button = ctk.CTkButton(app, text="Cubic", command=cubic_window, font=(
         "Arial", 18), width=400, height=30)
-    cubic_button.pack(pady=5)
+    cubic_button.pack(pady=8)
 
     exponential_button = ctk.CTkButton(
         app, text="Exponential", command=exponential_window, font=("Arial", 18), width=400, height=30)
-    exponential_button.pack(pady=5)
+    exponential_button.pack(pady=8)
 
     logarithmic_button = ctk.CTkButton(
         app, text="Logarithmic", command=logarithmic_window, font=("Arial", 18), width=400, height=30)
-    logarithmic_button.pack(pady=5)
+    logarithmic_button.pack(pady=8)
 
     app.mainloop()
-
-    # print("\nWelcome to the Algebra app for graphing functions!")
-
-    # while True:
-    #     print("\nPlease enter the function you would like to graph.")
-    #     print("1. Linear")
-    #     print("2. Quadratic")
-    #     print("3. Cubic")
-    #     print("4. Exponential")
-    #     print("5. Logarithmic")
-    #     print("6. Exit")
-
-    #     choice = input("\nEnter your choice: ")
-
-    #     if choice == "1":
-    #         m = float(input("Enter the slope: "))
-    #         b = float(input("Enter the y-intercept: "))
-    #         graph = Function().linear(m, b)
-    #         graph.plot()
-
-    #     elif choice == "2":
-    #         a = float(input("Enter the coefficient of x^2: "))
-    #         b = float(input("Enter the coefficient of x: "))
-    #         c = float(input("Enter the constant: "))
-    #         graph = Function().quadratic(a, b, c)
-    #         graph.plot()
-
-    #     elif choice == "3":
-    #         a = float(input("Enter the coefficient of x^3: "))
-    #         b = float(input("Enter the coefficient of x^2: "))
-    #         c = float(input("Enter the coefficient of x: "))
-    #         d = float(input("Enter the constant: "))
-    #         graph = Function().cubic(a, b, c, d)
-    #         graph.plot()
-
-    #     elif choice == "4":
-    #         a = float(input("Enter the coefficient of b^x: "))
-    #         b = float(input("Enter the base: "))
-    #         graph = Function().exponential(a, b)
-    #         graph.plot()
-
-    #     elif choice == "5":
-    #         b = float(input("Enter the base (enter 0 for natural log(ln)): "))
-    #         if (b < 0) or (b == 1):
-    #             print("Invalid base.")
-    #         if b == 0:
-    #             graph = Function().logarithmic(math.e)
-    #         else:
-    #             graph = Function().logarithmic(b)
-    #         graph.plot()
-
-    #     elif choice == "6":
-    #         break
-
-    #     else:
-    #         print("Invalid choice. Please try again.")
 
 
 if __name__ == '__main__':

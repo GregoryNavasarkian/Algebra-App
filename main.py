@@ -3,6 +3,8 @@
 
 from matplotlib import pyplot as plt
 import math
+import tkinter as tk
+import customtkinter as ctk
 
 
 class Graph:
@@ -70,6 +72,16 @@ class Function:
 
 
 def main():
+    
+    ctk.set_appearance_mode("System")
+    ctk.set_default_color_theme("blue")
+
+    app = ctk.CTk()
+    app.geometry("500x500")
+    app.title("Algebra App")
+    app.resizable(False, False)
+
+    
 
     print("\nWelcome to the Algebra app for graphing functions!")
 

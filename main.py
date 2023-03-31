@@ -94,16 +94,16 @@ def linear_window():
         app, text="Enter the slope and y-intercept below ( y = mx + b )", font=("Arial", 16))
     description.pack(pady=8)
 
-    m_label = ctk.CTkLabel(app, text="m: ", font=("Arial", 14))
+    m_label = ctk.CTkLabel(app, text="m: ", font=("Arial", 16))
     m_label.pack(pady=8)
 
-    m_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    m_entry = ctk.CTkEntry(app, font=("Arial", 16))
     m_entry.pack(pady=8)
 
-    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
+    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 16))
     b_label.pack(pady=8)
 
-    b_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    b_entry = ctk.CTkEntry(app, font=("Arial", 16))
     b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
@@ -136,22 +136,22 @@ def quadratic_window():
         app, text="Enter the coefficients below ( y = ax^2 + bx + c )", font=("Arial", 16))
     description.pack(pady=8)
 
-    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
+    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 16))
     a_label.pack(pady=8)
 
-    a_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    a_entry = ctk.CTkEntry(app, font=("Arial", 16))
     a_entry.pack(pady=8)
 
-    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
+    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 16))
     b_label.pack(pady=8)
 
-    b_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    b_entry = ctk.CTkEntry(app, font=("Arial", 16))
     b_entry.pack(pady=8)
 
-    c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 14))
+    c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 16))
     c_label.pack(pady=8)
 
-    c_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    c_entry = ctk.CTkEntry(app, font=("Arial", 16))
     c_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
@@ -185,28 +185,28 @@ def cubic_window():
         app, text="Enter the coefficients below ( y = ax^3 + bx^2 + cx + d )", font=("Arial", 16))
     description.pack(pady=8)
 
-    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
+    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 16))
     a_label.pack(pady=8)
 
-    a_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    a_entry = ctk.CTkEntry(app, font=("Arial", 16))
     a_entry.pack(pady=8)
 
-    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
+    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 16))
     b_label.pack(pady=8)
 
-    b_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    b_entry = ctk.CTkEntry(app, font=("Arial", 16))
     b_entry.pack(pady=8)
 
-    c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 14))
+    c_label = ctk.CTkLabel(app, text="c: ", font=("Arial", 16))
     c_label.pack(pady=8)
 
-    c_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    c_entry = ctk.CTkEntry(app, font=("Arial", 16))
     c_entry.pack(pady=8)
 
-    d_label = ctk.CTkLabel(app, text="d: ", font=("Arial", 14))
+    d_label = ctk.CTkLabel(app, text="d: ", font=("Arial", 16))
     d_label.pack(pady=8)
 
-    d_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    d_entry = ctk.CTkEntry(app, font=("Arial", 16))
     d_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
@@ -238,16 +238,16 @@ def exponential_window():
         app, text="Enter the base and coefficient below ( y = a * b^x )", font=("Arial", 16))
     description.pack(pady=8)
 
-    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 14))
+    a_label = ctk.CTkLabel(app, text="a: ", font=("Arial", 16))
     a_label.pack(pady=8)
 
-    a_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    a_entry = ctk.CTkEntry(app, font=("Arial", 16))
     a_entry.pack(pady=8)
 
-    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 14))
+    b_label = ctk.CTkLabel(app, text="b: ", font=("Arial", 16))
     b_label.pack(pady=8)
 
-    b_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    b_entry = ctk.CTkEntry(app, font=("Arial", 16))
     b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
@@ -277,12 +277,12 @@ def logarithmic_window():
 
     description = ctk.CTkLabel(
         app, text="Enter the base below (enter 0 for natural log)", font=("Arial", 16))
-    description.pack(pady=8)    
-    
-    b_label = ctk.CTkLabel(app, text="base: ", font=("Arial", 14))
+    description.pack(pady=8)
+
+    b_label = ctk.CTkLabel(app, text="base: ", font=("Arial", 16))
     b_label.pack(pady=8)
 
-    b_entry = ctk.CTkEntry(app, font=("Arial", 14))
+    b_entry = ctk.CTkEntry(app, font=("Arial", 16))
     b_entry.pack(pady=8)
 
     graph_button = ctk.CTkButton(
